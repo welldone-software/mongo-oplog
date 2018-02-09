@@ -1,5 +1,5 @@
 {
-  "name": "mongo-oplog",
+  "name": "@welldone-software/mongo-oplog",
   "version": "2.1.0",
   "description": "Watch mongodb oplog in a simple way",
   "author": "Jonathan Brumley <cayasso@gmail.com>",
