@@ -9,11 +9,7 @@ const createStream = require('./stream')
 const MONGO_URI = 'mongodb://127.0.0.1:27017/local'
 const debug = createDebug('mongo-oplog')
 
-const events = {
-  i: 'insert',
-  u: 'update',
-  d: 'delete'
-}
+const events = createFilter.events
 
 // Add callback support to promise
 const toCb = fn => cb => {

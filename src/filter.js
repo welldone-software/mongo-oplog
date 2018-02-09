@@ -2,7 +2,12 @@
 
 const Emitter = require('eventemitter3')
 const dbg = require('debug')
-const { events } = require('./')
+
+const events = {
+  i: 'insert',
+  u: 'update',
+  d: 'delete'
+}
 
 function regex(pattern) {
   pattern = pattern || '*'
@@ -36,3 +41,4 @@ module.exports = (ns, oplog) => {
 }
 
 module.exports.regex = regex
+module.exports.events = events
